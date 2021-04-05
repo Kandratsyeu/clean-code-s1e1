@@ -67,9 +67,11 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+
   .inf {
     text-align: center;
   }
+  
 }
 
 /* Heading */
@@ -123,7 +125,8 @@ button:hover {
   align-items: center;
 }
 
-.task > * {
+.task>
+* {
   vertical-align: middle;
 }
 
@@ -131,14 +134,16 @@ button:hover {
   margin: 0 10px;
 }
 
-.task > .task-font {
+.task>
+.task-font {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task > .task-text-input {
+.task>
+.task-text-input {
   width: 226px;
 }
 
@@ -154,22 +159,26 @@ button:hover {
 
 /* Completed */
 
-#completed-tasks .task-completed {
+#completed-tasks 
+.task-completed {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.task .task-text-input {
+.task 
+.task-text-input {
   display: none;
 }
 
-.edit-mode .task-text-input {
+.edit-mode 
+.task-text-input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .task-label {
+.edit-mode 
+.task-label {
   display: none;
 }
