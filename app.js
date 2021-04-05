@@ -29,19 +29,23 @@ var createNewTaskElement = function (taskString) {
   var deleteButton = document.createElement('button') //delete button
   var deleteButtonImg = document.createElement('img') //delete button image
 
+  listItem.className = 'task'
+
   label.innerText = taskString
-  label.className = 'task'
+  label.className = 'task-font task-label'
 
   //Each elements, needs appending
   checkBox.type = 'checkbox'
+  checkBox.className = 'task-checker'
   editInput.type = 'text'
-  editInput.className = 'task'
+  editInput.className = 'task-font task-text-input'
 
   editButton.innerText = 'Edit' //innerText encodes special characters, HTML does not.
   editButton.className = 'edit-task'
 
   deleteButton.className = 'delete-task'
   deleteButtonImg.src = './remove.svg'
+  deleteButtonImg.className = 'delete-task-arrow'
   deleteButton.appendChild(deleteButtonImg)
 
   //and appending.
@@ -109,6 +113,9 @@ var taskCompleted = function () {
 
   //Append the task list item to the #completed-tasks
   var listItem = this.parentNode
+  listItem.classList.add('task')
+  var label = listItem.querySelector('label')
+  label.classList.add('task-completed')
   completedTasksHolder.appendChild(listItem)
   bindTaskEvents(listItem, taskIncomplete)
 }
@@ -119,6 +126,7 @@ var taskIncomplete = function () {
   //When the checkbox is unchecked
   //Append the task list item to the #incompleteTasks.
   var listItem = this.parentNode
+  listItem.className = 'task'
   incompleteTaskHolder.appendChild(listItem)
   bindTaskEvents(listItem, taskCompleted)
 }
