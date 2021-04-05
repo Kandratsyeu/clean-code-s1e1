@@ -4,25 +4,25 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.information {
+.inf {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.information img {
+.inf img {
   width: 100%;
 }
-.information .more-inf {
+.inf .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .information {
+  .inf {
     text-align: center;
   }
 }
-.application {
+.app {
   display: block;
   width: 500px;
   margin: 0 auto 0;
