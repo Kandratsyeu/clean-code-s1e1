@@ -7,47 +7,46 @@
   </head>
   <body>
     <section class="inf">
-      <img class="inf-img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      <img class="inf__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+      <a class="inf__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </section>
     <section class="app">
-      <h3 class="app-section-title new-task-label">Add Item</h3>
-      <ul id="add-task new-task">
-        <li class="task-row-wrapper">
-          <input id="new-task" class="task-font task-text-input" type="text">
+      <h3 class="app__title app__new-task__label">Add Item</h3>
+        <li class="app__new-task__task-row-wrapper">
+          <input id="app__new-task" class="app__task-font app__task-text-input" type="text">
           <button>Add</button>
         </li>
       </ul>
-      <h3 class="app-section-title">Todo</h3>
-      <ul id="incomplete-tasks">
-        <li class="task">
-          <input type="checkbox" class="task-checker">
-          <p class="task-font task-label">Pay Bills</p>
-          <input type="text" class="task-font task-text-input">
-          <button class="edit-task">Edit</button>
-          <button class="delete-task">
-            <img src="./remove.svg" alt="" class="delete-task-arrow">
+      <h3 class="app__title">Todo</h3>
+      <ul id="app__incomplete-tasks">
+        <li class="app__task">
+          <input type="checkbox" class="app__task__task-checker">
+          <p class="app__task-font app__task__label">Pay Bills</p>
+          <input type="text" class="app__task-font app__task-text-input">
+          <button class="app__task__edit-task">Edit</button>
+          <button class="app__task__delete-task">
+            <img src="./remove.svg" alt="" class="app__task__delete-task-arrow">
           </button>
         </li>
-        <li class="task edit-mode">
-          <input type="checkbox" class="task-checker">
-          <p class="task-font task-label">Go Shopping</p>
-          <input type="text" value="Go Shopping" class="task-font task-text-input">
-          <button class="edit-task">Save</button>
-          <button class="delete-task">
-            <img src="./remove.svg" alt="" class="delete-task-arrow">
+        <li class="app__task app__task_edit-mode">
+          <input type="checkbox" class="app__task__task-checker">
+          <p class="app__task-font app__task__label">Go Shopping</p>
+          <input type="text" value="Go Shopping" class="app__task-font app__task-text-input">
+          <button class="app__task__edit-task">Save</button>
+          <button class="app__task__delete-task">
+            <img src="./remove.svg" alt="" class="app__task__delete-task-arrow">
           </button>
         </li>
       </ul>
-      <h3 class="app-section-title">Completed</h3>
-      <ul id="completed-tasks">
-        <li class="task">
-          <input type="checkbox" class="task-checker" checked>
-          <p class="task-font task-completed task-label">See the Doctor</p>
-          <input type="text" class="task-font task-font task-text-input">
-          <button class="edit-task">Edit</button>
-          <button class="delete-task">
-            <img src="./remove.svg" alt="" class="delete-task-arrow">
+      <h3 class="app__title">Completed</h3>
+      <ul id="app__completed-task">
+        <li class="app__task">
+          <input type="checkbox" class="app__task__task-checker" checked>
+          <p class="app__task-font app__task__task-completed app__task__label">See the Doctor</p>
+          <input type="text" class="app__task-font app__task-text-input">
+          <button class="app__task__edit-task">Edit</button>
+          <button class="app__task__delete-task">
+            <img src="./remove.svg" alt="" class="app__task__delete-task-arrow">
           </button>
         </li>
       </ul>
